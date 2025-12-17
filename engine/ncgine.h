@@ -1,11 +1,15 @@
 #ifndef NCGINE_H_
 #define NCGINE_H_
 
-typedef struct {
+#include <stdbool.h>
 
-    void (*draw_char)(int x, int y, char c);  
+typedef struct {
+    
+    bool running;
+//    void (*draw_char)(int x, int y, char c);  
 
 } NCgine;
+
 
 
 
