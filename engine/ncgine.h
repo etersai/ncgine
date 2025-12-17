@@ -6,11 +6,13 @@
 typedef struct {
     
     bool running;
+
+    double (*ncgine_get_time)(void);
 //    void (*draw_char)(int x, int y, char c);  
 
 } NCgine;
 
-
+int ncgine_init(NCgine* ncgine);
 
 
 
