@@ -2,10 +2,6 @@
 
 #TODO: automation for branches.
 
-# [REMEMBER]
-#git push = local → remote ✓
-#git pull = remote → local ✓
-
 current_branch=$(git branch --show-current)
 
 if [ "$current_branch" != "main" ]; then
@@ -25,3 +21,5 @@ git push origin main
 
 # verify
 git status
+
+# etersai 2025
