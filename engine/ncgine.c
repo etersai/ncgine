@@ -7,9 +7,9 @@
 
 int ncgine_init(NCgine* ncgine)
 {
-    assert(ncgine != NULL && "Not expecting null pointer!"); 
+    assert(ncgine != NULL && "Not expecting NULL pointer!"); 
 
-    ncgine->ncgine_get_time = platform_get_time;
+    ncgine->platform_get_time = platform_get_time;
 
     return 0;
 }

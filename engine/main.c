@@ -1,21 +1,20 @@
 #include "ncgine.h"
 
 #include <stdio.h>
-#include <stdlib.h>
 
-#define log_usage(prog_name) do { fprintf(stderr, "Usage: %s <app-to-load.dll>", prog_name); } while (0)
+#define log_usage(prog_name) do { fprintf(stderr, "Usage: %s <app-to-load.dll/so>", prog_name); } while (0)
+#define UNUSED(arg) (void)(arg)
 
 int main(int argc, char** argv)
 {
-    NCgine ncg = {0};
-    ncg.running = true;
-    
-     
+    UNUSED(argc);
+    UNUSED(argv);
 
-    // the enginge menu it self will be an .dll
-    while (ncg.running) {
-        
-    }
+    NCgine ncgine = {0};
+    ncgine_init(&ncgine);
+    
+    double time = ncgine.platform_get_time();
+    printf("[PLATFORM AGNOSTIC TIME => %f]", time);    
 
     return 0;
 }

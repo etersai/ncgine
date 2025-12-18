@@ -5,8 +5,8 @@
 
 typedef struct {
     
-    // Platform
-    double (*ncgine_get_time)(void);
+    double (*platform_get_time)(void);
+    // platform_load_dynamic_lib();
     
     bool running;
 
