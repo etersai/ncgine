@@ -2,7 +2,7 @@
 
 #include <time.h>
 
-double linux_get_time(void)
+double platform_get_time(void)
 {
     struct timespec ts;    
     clock_gettime(CLOCK_MONOTONIC, &ts);

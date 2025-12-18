@@ -1,4 +1,4 @@
-#include "ncgine.h"
+#include "engine/ncgine.h"
 
 #include <stdio.h>
 
