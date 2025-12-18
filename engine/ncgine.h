@@ -5,15 +5,14 @@
 
 typedef struct {
     
-    bool running;
-
+    // Platform
     double (*ncgine_get_time)(void);
-//    void (*draw_char)(int x, int y, char c);  
+    
+    bool running;
 
 } NCgine;
 
 int ncgine_init(NCgine* ncgine);
-
 
 
 #endif /*NCGINE_H_*/

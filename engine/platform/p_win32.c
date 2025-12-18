@@ -1,6 +1,6 @@
-#include "p_win32.h"
+#include "platform.h"
 
 double win32_get_time(void)
 {
-    return 0.0;
+    return 420.0; // dummy jummy
 }
