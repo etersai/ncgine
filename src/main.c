@@ -14,7 +14,7 @@ int main(int argc, char** argv)
     ncgine_init(&ncgine);
     
     double time = ncgine.platform_get_time();
-    printf("[PLATFORM AGNOSTIC TIME => %f]", time);    
+    printf("[PLATFORM AGNOSTIC TIME => %f]\n", time);    
 
     return 0;
 }
